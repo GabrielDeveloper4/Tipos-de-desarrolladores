@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    min-width: 580px;
+}
+main {
+    background-color: #c4c4c4;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 3;
+}
+.header-top{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+}
+.logo:hover{
+    color: white;
+    background-color: black;
+
+}
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 4px;
+}
+.nav hr {
+    width: 2px;
+    background-color: black;
+    height: 70%;
+}
+.nav a{
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+}
+.nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+.type-developers {
+    position: relative;
+    z-index: 2;
+    margin-top: -110px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+}
+.introduccion {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    z-index: 1; /* Asegura que introduccion esté detrás de otros elementos */
+    margin-bottom: 3px;
+}
+.introduccion p {
+    width: 90%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+.item {
+    height: fit-content;
+    width: 160px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px 20px 10px 10px;
+
+}
+.item hr{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.content-img{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-img img{
+    height: 100%;
+    
+}
+.descripcion {
+    font-size: 11px;
+    color: black;
+    width: 90%;
+    font-weight: bold;
+}
+.Leer-mas {
+    width: 100%;
+    height: 20px;
+}
+.Leer-mas button{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: black;
+    object-fit: cover;
+    border-radius: 0px 0px 10px 10px;
+}
+.footer_botomm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10px; */
+    font-size: 16px;
+    height: 80px;
+}
+.Sigueme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.Sigueme a{
+    color: black;
+    font-size: 30px;
+}
+.redes_sociales{
+    width: 180px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes_sociales a:hover {
+    color: black;
+}
+.copyryght{
+    display: flex;
+}
+footer{
+    background-color: white;
+}
+footer hr{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+@media screen and (min-width: 1050px){
+    .type-developers {
+        position: relative;
+        z-index: 2;
+        margin-top: -110px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        /*align-items: center;*/
+        
+    }
+}
+@media screen and (max-width: 700px){
+    .introduccion p {
+        width: 90%;
+        color: white;
+        font-size: 80%;
+        font-weight: bold;
+        display: flex;
+    }
+    .footer_botomm {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-around;
+    }
+}
+
